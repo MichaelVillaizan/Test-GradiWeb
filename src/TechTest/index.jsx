@@ -35,8 +35,12 @@ export default function TechTest({setBox,box,digits1_4,
         setMonth("01");
         setYear(" ");
     }
-    
+    const input2 = document.getElementById("i2") 
+    const input3 = document.getElementById("i3") 
+    const input4 = document.getElementById("i4") 
+    const input5 = document.getElementById("i5")
     const layout = <div className="card-info-form">
+     
   
         <div className={cardStatus}  >
             <div className="card__front">
@@ -58,20 +62,20 @@ export default function TechTest({setBox,box,digits1_4,
         </div>
     
 
-        <form action="#" id="card-form" onSubmit={(e)=>{data.push([e.target[0].value+" "+e.target[1].value+" "+e.target[2].value+" "+e.target[3].value,e.target[4].value,e.target[5].value+"/"+e.target[6].value.slice(2,4), digestMessage(e.target[7].value) ]);setTable();console.log(data); resetForm()} }>
+        <form  action="#" id="card-form" onSubmit={(e)=>{data.push([e.target[0].value+" "+e.target[1].value+" "+e.target[2].value+" "+e.target[3].value,e.target[4].value,e.target[5].value+"/"+e.target[6].value.slice(2,4), digestMessage(e.target[7].value) ]);setTable();console.log(data); resetForm()} }>
         <h3 className="section-title">CREDIT CARD NUMBER</h3>
             <label htmlFor="credit-card-number" className="number-boxes-container">
                 
-                <input type="text" maxLength="4" minLength="4" pattern="[0-9]+"  onChange={(e)=>{setDigits1_4(e.target.value.toString())}} className="no-spin number-box" required/>
-                <input type="text" maxLength="4" minLength="4" pattern="[0-9]+" onChange={(e)=>{setDigits5_8(e.target.value.toString())}} className="no-spin number-box" required/>
-                <input type="text" maxLength="4" minLength="4" pattern="[0-9]+"  onChange={(e)=>{setDigits9_12(e.target.value.toString())}} className="no-spin number-box" required/>
-                <input type="text" maxLength="4" minLength="4" pattern="[0-9]+" onChange={(e)=>{setDigits13_16(e.target.value.toString())}} className="no-spin number-box" required/>
+                <input type="text" id="i1" maxLength="4" minLength="4" pattern="[0-9]+" onKeyUp={(e)=>{if (e.target.value.length == 4) input2.focus()}} onChange={(e)=>{setDigits1_4(e.target.value.toString())}} className="no-spin number-box" required/>
+                <input type="text" id="i2" maxLength="4" minLength="4" pattern="[0-9]+" onKeyUp={(e)=>{if (e.target.value.length == 4) input3.focus()}} onChange={(e)=>{setDigits5_8(e.target.value.toString())}} className="no-spin number-box" required/>
+                <input type="text" id="i3" maxLength="4" minLength="4" pattern="[0-9]+" onKeyUp={(e)=>{if (e.target.value.length == 4) input4.focus()}} onChange={(e)=>{setDigits9_12(e.target.value.toString())}} className="no-spin number-box" required/>
+                <input type="text" id="i4" maxLength="4" minLength="4" pattern="[0-9]+" onKeyUp={(e)=>{if (e.target.value.length == 4) input5.focus()}}onChange={(e)=>{setDigits13_16(e.target.value.toString())}} className="no-spin number-box" required/>
             </label>
             
-        <h3 clasNames="section-title">CARD HOLDER NAME</h3>
+        <h3 className="section-title">CARD HOLDER NAME</h3>
             <label htmlFor="card-holder-name" className="card-holder-name-container">
                 
-                <input type="text"  pattern="[a-zA-Z ]{2,254}" onChange={(e)=>{setCardHolderName(e.target.value.toString(),[])}} maxLength="25" className="text-box" required />
+                <input type="text" id="i5"  pattern="[a-zA-Z ]{2,254}" onChange={(e)=>{setCardHolderName(e.target.value.toString(),[])}} maxLength="25" className="text-box" required />
             </label>
         <div className="date-cvv-box">
         

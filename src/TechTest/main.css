@@ -216,3 +216,28 @@ th,td{
     width: 30%;
     outline: 1px solid #000;
 }
+@media (max-width: 720px) {
+    .button{
+        font-size: 12px;
+    }
+    .section-title{
+        font-size: 12px;
+    }
+    .card-info-form{
+        padding-left: 14px;
+        padding-right: 14px;
+        width: 80%;
+    }
+    .text-box{
+        width: 94%;
+    }
+    .board{
+        width: 80%;
+    }
+    
+    }
+@media (max-width: 360px) {
+    .number-box{
+        width: 30%;
+    }
+}
