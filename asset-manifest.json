@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Test-GradiWeb/static/css/main.c5c5e117.css",
-    "main.js": "/Test-GradiWeb/static/js/main.79833978.js",
+    "main.css": "/Test-GradiWeb/static/css/main.011f50a7.css",
+    "main.js": "/Test-GradiWeb/static/js/main.7f6070c3.js",
     "static/js/787.7da975c8.chunk.js": "/Test-GradiWeb/static/js/787.7da975c8.chunk.js",
     "index.html": "/Test-GradiWeb/index.html",
-    "main.c5c5e117.css.map": "/Test-GradiWeb/static/css/main.c5c5e117.css.map",
-    "main.79833978.js.map": "/Test-GradiWeb/static/js/main.79833978.js.map",
+    "main.011f50a7.css.map": "/Test-GradiWeb/static/css/main.011f50a7.css.map",
+    "main.7f6070c3.js.map": "/Test-GradiWeb/static/js/main.7f6070c3.js.map",
     "787.7da975c8.chunk.js.map": "/Test-GradiWeb/static/js/787.7da975c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5c5e117.css",
-    "static/js/main.79833978.js"
+    "static/css/main.011f50a7.css",
+    "static/js/main.7f6070c3.js"
   ]
 }
